@@ -1,0 +1,14 @@
+:root {
+    --body: #181818;
+    --bgColor: hsla(0, 0%, 100%, 0.9);
+    --text: #000000;
+    --text-secondary: #a9a9a9;
+    --orange-theme: rgb(145, 5, 33);
+    --text-alt: #bebebe;
+    --border: #FA7934;
+    --border-alt: #f0f0f0;
+    --bgColor-alt-1: #f8C639;
+    --bgColor-alt-2: #F0872B;
+    --content: #1e1e1e;
+    --bg-alt: #0e0e0e;
+}

@@ -1,0 +1,314 @@
+@import url("variable.css");
+@import url("fonts.css");
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    margin-top: 100px;
+}
+
+.title-lead.menu,
+.title-lead.gallery{
+    text-align: center;
+}
+
+/* Header */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: var(--bgColor);
+    backdrop-filter: blur(15px);
+ 
+}
+.navbar.navbar-expand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.navbar .navbar-brand{
+    width: 100px;
+    height: 100px;
+}
+.navbar-brand img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .collapse{
+    width: 80%;
+}
+
+.collapse .navbar-nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-nav .nav-item{
+    padding: .9rem .75rem;
+}
+.nav-item.active{
+    padding: .75em 1.5em;
+    border-radius: 3em;
+    background: linear-gradient(var(--bgColor-alt-1), var(--bgColor-alt-2));
+    box-shadow: 0px 3px 5px 0px var(--bgColor-alt-2);
+}
+
+.nav-item.active a.nav-link{
+    color: #FFFFFF;
+}
+
+.nav-item a.nav-link{
+    color: var(--text);
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.nav-link.order-link{
+    font-size: 13px!important;
+    border: 2px solid var(--border);
+    padding: .75em 1em;
+    border-radius: 3em;
+}
+
+
+/* Banner */
+
+.banner-homepage{
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 2em;
+}
+
+.slide .slide-tags{
+    text-align: center;
+    max-width: 400px;
+}
+
+.slide-tags .text-lead{
+    font-family: "Owl-Cute";
+    font-size: 2.5em;
+    color: #35B8f4;
+}
+
+.slide-tags-intro {
+    padding: .75em;
+}
+
+.slide-tags-intro p{
+    font-size: 2.90em;
+    font-family: AvantGardeDemiBt;
+    text-transform: capitalize;
+    line-height: 4rem;
+}
+p span.text-alt{
+    text-transform: uppercase !important;
+}
+
+.slide .slide-img{
+    width: 500px;
+    height: auto;
+}
+
+.slide-img img{
+    width: 100%;
+}
+
+
+/* About */
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img{
+    width: 450px;
+    height: 350px;
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+}
+
+.about-description{
+    max-width: 550px;
+    height: 100%;
+    margin-left: -100px;
+    z-index: 5;
+    background: #FFFFFF;
+    border-radius: 1.5em;
+    padding: 2.5rem;
+    box-shadow: 2px 5px 10px 2px rgba(21, 34, 53, 0.4);
+}
+
+
+.title-lead{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.about-text-description{
+    margin-top: 5px;
+}
+
+.about-text-description p{
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: .7rem;
+    line-height: 1.5rem;
+}
+
+.learn-more{
+    margin-top: 10px;
+    border: none;
+    padding: .75em 1.5em;
+    border-radius: 3em;
+    background: linear-gradient(var(--bgColor-alt-1), var(--bgColor-alt-2));
+    box-shadow: 0px 3px 5px 0px var(--bgColor-alt-2);
+    cursor: pointer;
+}
+
+.learn-more span, 
+.btn span{
+    color: #FFFFFF;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+
+/*Menu*/
+
+
+.menu-cards{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-card{
+    margin-top: 70px;
+}
+
+.card-box{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 6px 4px rgba(21, 34, 53, 0.4);
+    position: relative;
+}
+
+.card-box img{
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 180px;
+}
+
+.card-info{
+    max-width: 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+.name{
+    font-family: "AvantGardeDemiBt";
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+}
+
+.price{
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.btn{
+    margin-top: 5px;
+    border: none;
+    padding: .75em 1.5em;
+    border-radius: 3em;
+    background: linear-gradient(var(--bgColor-alt-1), var(--bgColor-alt-2));
+    box-shadow: 0px 3px 5px 0px var(--bgColor-alt-2);
+    cursor: pointer;
+}
+
+/* Galery*/
+.gallery-contains{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.gallery-card{
+    width: 350px;
+    height: 250px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid var(--border-alt);
+}
+
+.gallery-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-group{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-more{
+    background: transparent!important;
+    border: 2px solid var(--border);
+    padding: .75em 1em;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.load-more span{
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 0.7rem;   
+}
