@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shark-Ice-Cream</title>
     <link rel="stylesheet" href="./assets/css/mainStyle.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -28,10 +30,10 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Photo</a>
+                            <a class="nav-link" href="#">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#">Photo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -75,7 +77,7 @@
                     <img src="img/depositphotos_386859156-stock-photo-closeup-photo-of-beautiful-little.webp" alt="pic2" srcset="">
                 </div>
                 <div class="about-description">
-                    <p class="title-lead">About Us</p>
+                    <p class="title-lead upper">About Us</p>
                     <div class="about-text-description">
                         <p>Ice cream is a frozen dessert made from cream and ice, with added flavors
                             and sweeteners. This mixture is quickly frozen while it is stirred continuously
@@ -94,7 +96,7 @@
 
         <!-- Menu -->
         <section id="menu">
-            <p class="title-lead menu">Our Menu</p>
+            <p class="title-lead menu upper">Our Menu</p>
                     
             <div class="menu-cards">
                 <!-- 1 -->
@@ -169,7 +171,7 @@
 
         <!-- Gallery -->
         <section id="gallery">
-            <p class="title-lead gallery">Photo Gallery</p>
+            <p class="title-lead gallery upper">Photo Gallery</p>
             <div class="gallery-contains">
                 <div class="gallery-card">
                     <img src="img/protein-ice-cream-1296x728-feature.webp" alt="">
@@ -196,8 +198,88 @@
                 </button>
             </div>
         </section>
+        <!--  -->
 
-
+        <!-- Contact us -->
+        <section id="contact-us">
+            <p class="title-lead contact-us">Contact Us</p>
+            <div class="form-container">
+                <form action="#" method="post" class="form-horizontal">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="" id="" placeholder="Your Name (required)">
+                      <input type="email" class="form-control" name="" id="" placeholder="Your Email (required)">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="" id="" placeholder="Phone # to reach you at">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id="" rows="4" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <div class="buttons-group">
+                        <button class="btn submit">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </div>
+
+    <footer>
+        <div class="footer-parts">
+            <div class="part logo-container">
+                <img src="img/logo-embleme-creme-glacee_9845-102.webp" alt="logo">
+            </div>
+            <div class="part quick-link">
+                <span class="title-lead">Quick Link</span>
+                <div class="link">
+                    <ul class="quicknav">
+                        <li class="quicknav-item">
+                            <a class="quicknav-link" href="#">Home</a>
+                        </li>
+                        <li class="quicknav-item">
+                            <a class="quicknav-link" href="#">About</a>
+                        </li>
+                        <li class="quicknav-item">
+                            <a class="quicknav-link" href="#">Product</a>
+                        </li>
+                        <li class="quicknav-item">
+                            <a class="quicknav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="quicknav-item">
+                            <a class="quicknav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="part contact-us">
+                <span class="title-lead upper">Contact Us</span>
+                <div class="info">
+                    <div class="adress">
+                        <span class="ico"><i class="fas fa-location-dot"></i></span> 
+                        <span class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                    </div>
+                    <div class="phone-number">
+                        <span class="ico"><i class="fas fa-phone"></i></span> 
+                        <span class="text"><span class="subtitle">Phone</span> <br> +41 258-963</span>
+                    </div>
+                </div>
+            </div>
+            <div class="part social-media">
+                <span class="title-lead">Social Media</span>
+                <div class="social-media-items">        
+                    <span class="ico-social-media"><i class="fab fa-facebook-f"></i></span>
+                    <span class="ico-social-media"><i class="fab fa-instagram"></i></span>
+                    <span class="ico-social-media"><i class="fab fa-twitter"></i></span>
+                    <span class="ico-social-media"><i class="fab fa-youtube"></i></span>
+                </div>
+            </div>
+            <div class="part location">
+                <div class="img-container">
+                    <img src="img/wow.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
